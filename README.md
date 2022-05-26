@@ -23,3 +23,10 @@ ng serve or npm start
 
 ctrl + c 
    - To turn off the server
+
+
+Configuration of browsers can be done in .browserslistrc file
+Configuration of editor can be done in .editorConfig file
+
+.gitignore files which will ignore the files which need not to be committed
+
