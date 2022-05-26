@@ -1,16 +1,13 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppComponent } from './app.component';
+//Decorators for annotating the class
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+  ]
+}) //need to tell this class is module
+export class AppModule {
+ 
+
+}
