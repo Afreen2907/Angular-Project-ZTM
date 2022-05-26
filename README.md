@@ -30,3 +30,5 @@ Configuration of editor can be done in .editorConfig file
 
 .gitignore files which will ignore the files which need not to be committed
 
+npm install typescript --save-dev to install typescript
+npx tsc <filename.ts> to convert typescript to js

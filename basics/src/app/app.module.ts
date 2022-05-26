@@ -10,6 +10,7 @@ import { AppComponent } from "./app.component";
   declarations: [
     AppComponent
   ],
+  // providers: [],
   bootstrap: [AppComponent]
 }) //need to tell this class is module
 export class AppModule {
