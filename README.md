@@ -32,3 +32,5 @@ Configuration of editor can be done in .editorConfig file
 
 npm install typescript --save-dev to install typescript
 npx tsc <filename.ts> to convert typescript to js
+
+Type Annotations are a way to describe the data in our application
