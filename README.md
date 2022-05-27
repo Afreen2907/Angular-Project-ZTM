@@ -5,31 +5,24 @@ This is a new project from Zero To Mastery Course
 
 ## Some Commands to use CLI
 
-ng version 
-  - To View the version of the angular
+- ng version : To View the version of the angular
 
-ng help 
-   - To view the list of commands 
+- ng help : To view the list of commands 
 
-ng new --help
-   - To see if the commands are being presented correctly
-   
+- ng new --help : To see if the commands are being presented correctly
 
-ng serve or npm start
-   - To start the server
+- ng serve or npm start : To start the server
 
-ctrl + c 
-   - To turn off the server
+- ctrl + c : To turn off the server
 
-npm install typescript --save-dev to install typescript
+- npm install typescript --save-dev to install typescript
 
-npx tsc <filename.ts> to convert typescript to js
+- npx tsc <filename.ts> to convert typescript to js
 
-npx tsc --config for getting tsconfig.json for configuring decorators
+- npx tsc --config for getting tsconfig.json for configuring decorators
  by adding "experimentalDecorators:true"
 
- ng generate component <folder name>
-       - To generate component
+- ng generate component <folder name> : To generate component
 
 
 
@@ -37,8 +30,8 @@ npx tsc --config for getting tsconfig.json for configuring decorators
 Angular:
 
 ### Passing data from parent to child component 
->> App is a parent component
->> Post is a child component
+>> App is a parent component and post is a child component
+
 
 In this example, the Image URL is being passed from App component to Post Component to render an image on the browser
 
@@ -59,8 +52,8 @@ In this example, the Image URL is being passed from App component to Post Compon
      <app-post [img]="imageURL"></app-post>
 
 ### Passing data from child to parent component
->> App is a parent component
->> Post is a child component
+>> App is a parent component and post is a child component
+
 
 In this example, the click event have been captured from child which is then being passed down to parent component
    - Import @Output decorator and EventEmitter
