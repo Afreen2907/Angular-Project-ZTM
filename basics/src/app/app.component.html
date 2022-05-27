@@ -1,7 +1,10 @@
 <input (keyup)="changeImage($event)" [value]="imageURL">
 <!-- Above is event binding -->
-<img [src]="imageURL">
+<!-- <img [src]="imageURL"> Moved to post-->
 <!-- Above is property Binding -->
+
+<app-post [img]="imageURL"></app-post>
+<!-- data can be passed down via property binding -->
 
 <p>Hello {{ name.toUpperCase() }}!</p>
 <p>Hello {{ getName() }}!</p>
