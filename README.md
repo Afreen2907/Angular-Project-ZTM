@@ -27,7 +27,6 @@ This is a new project from Zero To Mastery Course
 
 
 ## Angular notes/summmary
-Angular:
 
 ### Passing data from parent to child component 
 >> App is a parent component and post is a child component
