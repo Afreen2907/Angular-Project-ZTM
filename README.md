@@ -28,6 +28,9 @@ This is a new project from Zero To Mastery Course
 
 ## Angular notes/summmary
 
+### Type Assertions
+Reference: https://microsoft.github.io/PowerBI-JavaScript/interfaces/_node_modules_typedoc_node_modules_typescript_lib_lib_dom_d_.eventtarget.html
+
 ### Passing data from parent to child component 
 >> App is a parent component and post is a child component
 
@@ -46,6 +49,7 @@ In this example, the Image URL is being passed from App component to Post Compon
       Example: <app-post [postImg]="imageURL"></app-post>
 
 ### Input Aliases
+Reference: https://angular.io/guide/styleguide#avoid-aliasing-inputs-and-outputs
    - Input can be aliased by using any name of the choice in the @Input() 's parameter. Example: @Input('img')
    - Make sure to use the aliased name when the data is being passed down from parent to child
      <app-post [img]="imageURL"></app-post>
@@ -81,6 +85,7 @@ Then use the content in post component by using <ng-content></ng-content>
 
 
 ### Lifecycle hooks
+Reference: https://angular.io/guide/lifecycle-hooks
 Note: Hooks that run more than once can impact the performance of the server
 
 #### Constructor()
@@ -118,6 +123,11 @@ It can be used when the angular doesnt want to do the update.
 
 #### Scoped CSS
  Styles which are placed in the component only affects the styles of that template
+
+
+### Pipes
+Reference: https://angular.io/api?type=pipe
+Pipes are functions for transforming values for the template
 
 ## Miscellaneous notes or references
 
