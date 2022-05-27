@@ -1,4 +1,7 @@
+<input (keyup)="changeImage($event)" [value]="imageURL">
+<!-- Above is event binding -->
 <img [src]="imageURL">
+<!-- Above is property Binding -->
 
 <p>Hello {{ name.toUpperCase() }}!</p>
 <p>Hello {{ getName() }}!</p>
