@@ -37,3 +37,6 @@ Type Annotations are a way to describe the data in our application
 
 npx tsc --config for getting tsconfig.json for configuring decorators
  by adding "experimentalDecorators:true"
+
+ ng generate component <folder name>
+       - To generate component
