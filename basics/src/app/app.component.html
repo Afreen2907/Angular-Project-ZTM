@@ -3,7 +3,9 @@
 <!-- <img [src]="imageURL"> Moved to post-->
 <!-- Above is property Binding -->
 
-<app-post [img]="imageURL" (imgSelected)="logImg($event)"></app-post>
+<app-post [img]="imageURL" (imgSelected)="logImg($event)">
+    <p>Some Content</p>
+</app-post>
 <!-- data can be passed down via property binding -->
 
 <p>Hello {{ name.toUpperCase() }}!</p>
