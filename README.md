@@ -81,6 +81,34 @@ Example: <app-post> some-content </app-post>
 Then use the content in post component by using <ng-content></ng-content>
 
 
+### Lifecycle hooks
+
+>> Constructor()
+Constructor will be revoked whenever the component is being initialised
+It occurs before the data binding
+
+>> ngOnInit()
+It occurs after all the data binding occurs and it is only revoked once like Constructor
+
+>>ngOnChange()
+It can be revoked multiple times
+It runs whenever there are changes being made
+It is used to perform updates. 
+
+>>ngDoCheck()
+It can be revoked multiple times.
+It runs after the change detection has occured.
+It can be used when the angular doesnt want to do the update.
+
+>>ngAfterContentInit()
+
+>>ngAfterViewChecked()
+
+>>ngAfterViewInit()
+
+>>ngAfterContentChecked()
+
+>>ngOnDestroy()
 
 ## Miscellaneous notes or references
 
