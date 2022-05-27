@@ -15,4 +15,8 @@ export class AppComponent {
   getName() {
     return this.name;
   }
+
+  changeImage(e: KeyboardEvent) {
+    this.imageURL = e.target.value
+  }
 }
