@@ -110,6 +110,15 @@ It can be used when the angular doesnt want to do the update.
 
 #### ngOnDestroy()
 
+
+### Global CSS vs Scoped CSS
+
+#### Global CSS 
+ Styles added to the file, style.css affects the global CSS
+
+#### Scoped CSS
+ Styles which are placed in the component only affects the styles of that template
+
 ## Miscellaneous notes or references
 
  - Type Annotations are a way to describe the data in our application
