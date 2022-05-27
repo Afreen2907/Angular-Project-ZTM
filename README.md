@@ -81,6 +81,7 @@ Then use the content in post component by using <ng-content></ng-content>
 
 
 ### Lifecycle hooks
+Note: Hooks that run more than once can impact the performance of the server
 
 #### Constructor()
 Constructor will be revoked whenever the component is being initialised
