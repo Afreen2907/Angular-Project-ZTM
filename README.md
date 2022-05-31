@@ -128,6 +128,10 @@ It can be used when the angular doesnt want to do the update.
 ### Pipes
 Reference: https://angular.io/api?type=pipe
 Pipes are functions for transforming values for the template
+Reference for date formating: https://angular.io/api/common/DatePipe#custom-format-options
+
+#### Custom format options
+Reference: https://angular.io/api/common/DatePipe#custom-format-options
 
 ## Miscellaneous notes or references
 
@@ -137,3 +141,4 @@ Pipes are functions for transforming values for the template
  - Configuration of browsers can be done in .browserslistrc file
  - Configuration of editor can be done in .editorConfig file
  - .gitignore files which will ignore the files which need not to be committed
+ - Dev tools: https://angular.io/guide/devtools
