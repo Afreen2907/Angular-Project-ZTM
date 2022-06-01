@@ -12,6 +12,8 @@ export class AppComponent {
   name = 'luis ramirez'
   imageURL = 'https://picsum.photos/id/237/500/500'
   currentDate = new Date()
+  cost = 2000
+  temperature = 25.3
 
   getName() {
     return this.name;

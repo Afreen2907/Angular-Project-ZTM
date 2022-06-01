@@ -129,6 +129,8 @@ It can be used when the angular doesnt want to do the update.
 Reference: https://angular.io/api?type=pipe
 Pipes are functions for transforming values for the template
 Reference for date formating: https://angular.io/api/common/DatePipe#custom-format-options
+Reference for currency formating: https://en.wikipedia.org/wiki/ISO_4217
+Reference for JSON pipe: https://angular.io/api/common/JsonPipe
 
 #### Custom format options
 Reference: https://angular.io/api/common/DatePipe#custom-format-options
