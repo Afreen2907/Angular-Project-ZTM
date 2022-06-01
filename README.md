@@ -144,7 +144,12 @@ Focuses on changing the layout of the DOM
 ng-Template, ngIf and ngFor are structural directives
 Reference for short hands for using ng-Template: https://angular.io/guide/structural-directives#shorthand-examples
 
-
+## Tailwind
+Reference for tailwind: https://tailwindcss.com/
+Reference for purgeCSS: https://purgecss.com/
+### Installing Tailwind:
+npm install -D tailwindcss@latest
+npx tailwind init
 ## Miscellaneous notes or references
 
  - Type Annotations are a way to describe the data in our application
