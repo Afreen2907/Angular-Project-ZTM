@@ -11,6 +11,11 @@ export class AppComponent {
 
   name = 'luis ramirez'
   imageURL = 'https://picsum.photos/id/237/500/500'
+  images = [
+    'https://picsum.photos/id/227/500/500',
+    'https://picsum.photos/id/237/500/500',
+    'https://picsum.photos/id/247/500/500'
+  ]
   currentDate = new Date()
   cost = 2000
   temperature = 25.3
@@ -18,6 +23,10 @@ export class AppComponent {
     toppings: ['pepperoni', 'bacon'],
     size: 'large'
   }
+
+  blueClass = false;
+  fontSize = 30
+  
 
   getName() {
     return this.name;

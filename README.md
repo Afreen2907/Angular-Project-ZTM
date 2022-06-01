@@ -131,8 +131,6 @@ Pipes are functions for transforming values for the template
 Reference for date formating: https://angular.io/api/common/DatePipe#custom-format-options
 Reference for currency formating: https://en.wikipedia.org/wiki/ISO_4217
 Reference for JSON pipe: https://angular.io/api/common/JsonPipe
-#### Custom format options
-Reference: https://angular.io/api/common/DatePipe#custom-format-options
 
 ### Directives
 Reference: https://angular.io/api?type=directive
@@ -140,9 +138,11 @@ For transforming contents --> Browsers have attributes which can affect what can
 So, angular provides directive to make some custom changes without creating any new components
 #### Attrubute Directives
 Focuses on changing the appearance or behaviour of an element
-
+ng-Class and ngStyle are attribute directives
 #### Structural Directives
 Focuses on changing the layout of the DOM
+ng-Template, ngIf and ngFor are structural directives
+Reference for short hands for using ng-Template: https://angular.io/guide/structural-directives#shorthand-examples
 
 
 ## Miscellaneous notes or references

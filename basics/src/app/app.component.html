@@ -1,10 +1,23 @@
+<!-- <ng-template [ngIf]="blueClass">
+    <p>Button is blue.</p>
+</ng-template> -->
+
+<p *ngIf="blueClass">Button is blue.</p>
+<!-- Above is short hand way of writing ng-template -->
+
+<!-- stuctural directive -->
+
+<button (click)="blueClass = !blueClass" [ngClass]="{ blue: blueClass}" [ngStyle]="{ 'font-size.px': fontSize}">Change</button>
+
+<hr>
+
 <input (keyup)="changeImage($event)" [value]="imageURL">
 <!-- Above is event binding -->
 <!-- <img [src]="imageURL"> Moved to post-->
 <!-- Above is property Binding -->
 
-<app-post [img]="imageURL" (imgSelected)="logImg($event)">
-    <p>Some Content</p>
+<app-post *ngFor="let image of images; let i = index" [img]="image" (imgSelected)="logImg($event)">
+    <p>{{i}} Some Content</p>
 </app-post>
 <!-- data can be passed down via property binding -->
 
