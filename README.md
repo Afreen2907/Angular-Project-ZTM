@@ -150,6 +150,8 @@ Reference for purgeCSS: https://purgecss.com/
 ### Installing Tailwind:
 npm install -D tailwindcss@latest
 npx tailwind init
+
+Reference for configuration: https://tailwindcss.com/docs/configuration
 ## Miscellaneous notes or references
 
  - Type Annotations are a way to describe the data in our application
