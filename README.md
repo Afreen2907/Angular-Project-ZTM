@@ -152,6 +152,11 @@ npm install -D tailwindcss@latest
 npx tailwind init
 
 Reference for configuration: https://tailwindcss.com/docs/configuration
+
+## Common Module
+Reference: https://angular.io/api/common/CommonModule
+
+
 ## Miscellaneous notes or references
 
  - Type Annotations are a way to describe the data in our application
