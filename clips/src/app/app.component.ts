@@ -8,16 +8,7 @@ import { ModalService } from './services/modal.service';
 })
 export class AppComponent {
   title = 'clips';
-  showModal = true;
+  
 
-  constructor(public modal: ModalService){}
 
-  ngOnInit() {
-    setInterval(
-      () => {
-        this.showModal = !this.showModal
-        console.log(this.modal.modals)
-      }, 1000
-    )
-  }
 }
