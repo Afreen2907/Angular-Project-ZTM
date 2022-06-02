@@ -117,12 +117,11 @@ It can be used when the angular doesnt want to do the update.
 
 
 ### Global CSS vs Scoped CSS
-
 #### Global CSS 
- Styles added to the file, style.css affects the global CSS
+ Styles added to the file, style.css affects the global CSS.
 
 #### Scoped CSS
- Styles which are placed in the component only affects the styles of that template
+ Styles which are placed in the component only affects the styles of that template.
 
 
 ### Pipes
@@ -155,6 +154,21 @@ Reference for configuration: https://tailwindcss.com/docs/configuration
 
 ## Common Module
 Reference: https://angular.io/api/common/CommonModule
+
+## Services
+An object for managing the data.
+To share the data across the components.
+
+Idea of MVC to split the files into separate the data, HTML and typeScript class.
+
+Services are not always necessary.
+
+Why we need services?
+We need them when it comes to share the data across multiple components.
+
+image.png
+
+The above image shows how the data is being passed between components. It will become exhaustive when we it use it across multiple component. So the services may help in this matter.
 
 
 ## Miscellaneous notes or references
