@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'clips';
+  showModal = true;
+
+  ngOnInit() {
+    this.showModal
+  }
 }
