@@ -170,6 +170,12 @@ image.png
 
 The above image shows how the data is being passed between components. It will become exhaustive when we it use it across multiple component. So the services may help in this matter.
 
+### Three ways to make the class injectable
+
+- By having Injectable decorator and set the providedIn as 'root' which is done by default while generating services via CLI by global level
+- Through modules or components by declaring model service object in the "Providers" by modal level
+- components by declaring model service object in the "Providers" by can only be injected for one component
+
 
 ## Miscellaneous notes or references
 
