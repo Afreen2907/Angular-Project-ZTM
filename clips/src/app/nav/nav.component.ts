@@ -16,7 +16,8 @@ export class NavComponent implements OnInit {
   openModal($event: Event) {
     $event.preventDefault() //as normal <a></a> tage feature redirects to different page, we need to use this function to remove the default action
 
-    this.modal.toggleModal()
+    this.modal.toggleModal('auth')
   }
+
 
 }
