@@ -56,6 +56,7 @@ export class RegisterComponent {
     this.showAlert = true
     this.alertMsg = 'Please wait! Your account is being created'
     this.alertColor = 'blue'
+    console.log(this.registerForm.controls)
   }
  
 }
