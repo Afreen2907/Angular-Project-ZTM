@@ -7,15 +7,22 @@ import {
     take,
     scan,
     tap,
-    mergeMap,
+    switchMap,
 } from 'rxjs/operators'
 import { ajax } from 'rxjs/ajax'
 
 const button = document.querySelector('#btn')
 
 const observable = fromEvent(button, 'click').pipe(
-    mergeMap(() => {
-        return ajax.getJSON('https://jsonplaceholder.typicode.com/todos/1')
+    switchMap(() => {
+        return ajax.getJSON('https://jsonplaceholder.typicode.com/todos/1').pipe(
+            take(5),
+            tap({
+                complete() {
+                    console.log('cmpp')
+                },
+            }),
+        )
     }),
 )
 
