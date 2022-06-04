@@ -1,5 +1,5 @@
-import { of } from 'rxjs'
-const observable = of(1, 2, 'click') //synchronous
+import { from } from 'rxjs'
+const observable = from([1, 2, 3, 4, 5]) //synchronous
 
 const subscription = observable.subscribe({
     next(value) {
