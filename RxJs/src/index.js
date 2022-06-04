@@ -3,19 +3,19 @@ import { Observable } from 'rxjs'
 const observable = new Observable((subscriber) => {
     // subscriber.next('test')
     const id = setInterval(() => {
-        subscriber.next('test')
-        console.log('leak') //testing of memory leak
-    }, 1000)
-    subscriber.complete()
+            subscriber.next('test')
+            console.log('leak') //testing of memory leak
+        }, 1000)
+        // subscriber.complete()
 
     return () => {
         clearInterval(id)
     }
 })
 
-console.log('before')
+// console.log('before')
 
-observable.subscribe({
+const subscription = observable.subscribe({
     next: (value) => {
         console.log(value)
     },
@@ -27,4 +27,8 @@ observable.subscribe({
     },
 })
 
-console.log('after')
+setTimeout(() => {
+    subscription.unsubscribe()
+}, 4000)
+
+// console.log('after')
