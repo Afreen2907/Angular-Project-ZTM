@@ -1,5 +1,5 @@
 import { from } from 'rxjs'
-const observable = from([1, 2, 3, 4, 5]) //synchronous
+const observable = from(fetch('https://jsonplaceholder.typicode.com/todos/1')) //synchronous
 
 const subscription = observable.subscribe({
     next(value) {
