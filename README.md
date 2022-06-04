@@ -176,6 +176,9 @@ The above image shows how the data is being passed between components. It will b
 - Through modules or components by declaring model service object in the "Providers" by modal level
 - components by declaring model service object in the "Providers" by can only be injected for one component
 
+## RxJS
+
+References for RxJs operator: https://rxjs.dev/api
 
 ## Miscellaneous notes or references
 
