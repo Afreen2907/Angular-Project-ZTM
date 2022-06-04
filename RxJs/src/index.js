@@ -1,5 +1,7 @@
-import { from } from 'rxjs'
-const observable = from(fetch('https://jsonplaceholder.typicode.com/todos/1')) //synchronous
+import { of, from } from 'rxjs'
+import { map } from 'rxjs/operators'
+
+const observable = of(1, 2, 3, 4, 5).pipe(map((value) => `$${value}`))
 
 const subscription = observable.subscribe({
     next(value) {
