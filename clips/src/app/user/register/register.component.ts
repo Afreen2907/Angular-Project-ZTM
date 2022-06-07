@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { FormGroup, FormControl, Validators} from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { FirebaseError } from '@firebase/util';
 
 @Component({
   selector: 'app-register',
@@ -8,9 +10,12 @@ import { FormGroup, FormControl, Validators} from '@angular/forms';
 })
 export class RegisterComponent {
 
+  constructor(private auth: AngularFireAuth) { }
+
   showAlert = false;
   alertMsg = 'Please wait! Your account is being created'
   alertColor = 'blue'
+  inSubmission = false
 
   name= new FormControl('', [
     Validators.required,
@@ -52,11 +57,44 @@ export class RegisterComponent {
 
  
   
-  register() {
+ async register() {
     this.showAlert = true
     this.alertMsg = 'Please wait! Your account is being created'
-    this.alertColor = 'blue'
-    console.log(this.registerForm.controls)
+   this.alertColor = 'blue'
+   this.inSubmission = true
+   
+   const { email, password } = this.registerForm.value
+    
+   try {
+    const userCred = await this.auth.createUserWithEmailAndPassword(
+      email,password
+    )
+   } catch (e: any) {
+   
+        console.error(e.message)
+     
+     var errorCode = e.code;
+  
+     switch (errorCode) {
+       case 'auth/weak-password':
+         this.alertMsg = 'The password is too weak';
+         break;
+       case 'auth/invalid-email':
+         this.alertMsg = 'The email is already in use';
+         break;
+       default:
+         this.alertMsg ='Uncaught Error! Please try again'
+     }
+    
+     
+     this.alertColor = 'red'
+     this.inSubmission = false
+     return
+   }
+
+   this.alertMsg = 'Success Your account has been created'
+   this.alertColor = 'green'
+   
   }
  
 }
