@@ -70,7 +70,7 @@ export class RegisterComponent {
     await this.auth.creatorUser(this.registerForm.value)
    } catch (e: any) {
    
-        console.error(e.message)
+     this.inSubmission = false;
      
      var errorCode = e.code;
   
